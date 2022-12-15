@@ -3,19 +3,24 @@ RestAPi quotes project for create, update, delete quotes using spring security a
 
 # Project Features
 1. Create, Read, Update User
-2. Create Category (Must insert manually to db )
-3. Create Roles manually (ROLE_USER, ROLE_ADMIN)
-4. Block users, list all users (must have role admin)
-5. Like & Dislike a quote
-6. Create, Update, Delete, list all comments
-7. Make a quote favorite
-8. Simple Uml Diagrams (Class Diagram, Use Case)
+2. Block users, list all users (must have role admin)
+3. Like & Dislike a quote
+4. Create, Update, Delete, list all comments
+5. Make a quote favorite
+6. Simple Uml Diagrams (Class Diagram, Use Case)
 
-# Mocking Testing - Http Method Testing
+# Mock Testing - Http Method Testing
 1. Create User - Post Method - (/users/createUser)
 
 # How to install
-1. change application.properties
-2. create database
-3. run your intellij ide
-4. Try with Postman
+1. Enter docker folder
+```bash
+cd docker
+```
+2. Start mysql db
+```bash
+docker compose -f mysql.yml up
+```
+3. Execute sql commands in `data.sql` that are in `src/main/resources` folder.
+4. Start application
+5. Try with Postman
